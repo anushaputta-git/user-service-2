@@ -1,0 +1,16 @@
+server:
+  servlet:
+    context-path: /user2
+  port: 8087
+  
+
+  
+spring:
+  application:
+    name: user-service-2
+  profiles:
+    active: test
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8085
